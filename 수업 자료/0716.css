@@ -1,0 +1,22 @@
+body {
+    background-color: ㅈㅗㅑ;
+}
+
+h1 {
+    color: blue;
+}
+
+.welcome {
+    font-size: 40px;
+    color: orange
+}
+
+#main-title {
+    color: blue;
+    font-size: 30px;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
