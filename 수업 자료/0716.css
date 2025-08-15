@@ -1,22 +1,35 @@
 body {
-    background-color: ㅈㅗㅑ;
-}
-
-h1 {
-    color: blue;
-}
-
-.welcome {
-    font-size: 40px;
-    color: orange
+    background-color: black;
+    padding: 20px;
 }
 
 #main-title {
-    color: blue;
-    font-size: 30px;
+    color: black;
+    font-family: "Pretendard";
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
 }
 
-.highlight {
-    background-color: yellow;
-    font-weight: bold;
+.introduce {
+    text-align: center;
+}
+
+img {
+    max-width: 800px;
+}
+
+.introduce p{
+    margin: 20px;
+}
+
+.introduce button{
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 24px;
+    border: 1px solid #ffffff; 
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    padding: 16px 32px 16px 32px;
+    border-radius: 250px;
 }
