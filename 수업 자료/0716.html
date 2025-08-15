@@ -15,6 +15,7 @@
 
 <body>
     <!-- 화면에 실제로 보이는 모든 콘텐츠 -->
+    <header>이것은 상단 헤더입니당~</header>
 
     <!-- 제목 태그 -->
     <h1>h1 - 안녕하세요!</h1>
@@ -53,12 +54,15 @@
     <input>
 
     <br>
-    <input type="text" placeholder="아이디 입력"><br>
-    <input type="password" placeholder="비밀번호 입력"><br>
-    <input type="checkbox"> 동의합니다 <br>
-    <input type="radio" name="gender" value="male"> 남자 <br>
-    <input type="radio" name="gender" value="female"> 여자 <br>
-    <input type="submit" value="제출"> <br>
+
+    <form action="/" method="POST">
+        <input type="text"><br>
+        <input type="password"><br>
+        <input type="checkbox" required> 동의합니다 <br></label>
+        <input type="radio" name="gender" value="male"> 남자 <br></label>
+        <input type="radio" name="gender" value="female"> 여자 <br></label>
+        <input type="submit"> <br>
+    </form>
 
     <!-- 목록 태그 -->
 
@@ -71,6 +75,8 @@
         <li>김시은</li>
         <li>윤수아</li>
     </ul>
+
+    
 
     <h3>오늘 할 일</h3>
     <ol>
@@ -98,11 +104,13 @@
     <h1 id="main-title">MASTUDY 웹페이지</h1>
     <p>이 제목은 웹페이지에서 딱 하나뿐인 특별한 제목이에요. 그래서 **id**를 사용했어요.</p>
 
-    <hr> 
-    
+    <hr>
+
     <h2>오늘의 중요한 소식</h2>
     <p>지금까지 <span class="highlight">HTML 학습</span>에 집중했어요. <span class="highlight">CSS도 곧 배울 거예요!</span></p>
     <p>여기서 중요한 단어들은 **class**를 사용해서 노란색으로 강조했어요. 여러 군데에 적용할 수 있죠.</p>
+
+    <footer>이것은 하단 푸터입니당.</footer>
 </body>
 
 </html>
