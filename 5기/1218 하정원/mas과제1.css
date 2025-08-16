@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 200px;
+}
+
+#title{
+    color: #FFF;
+    font-family: "Pretendard";
+    font-size: 83px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.wldnjs button{
+    background-color: black;
+    color: white;
+    font-family: "Pretendard";
+    border: 1px solid white;
+    font-size: 24px;
+    border-radius: 250px;
+    padding: 20px 47px 20px 47px;
+}
