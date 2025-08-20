@@ -1,0 +1,43 @@
+.help {
+    cursor: help;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+.content-section p {
+    position: relative;
+    padding: 5px 0;
+}
+
+
+.content-section p::before {
+    content: "📌"; 
+}
+
+/*  p::after  */
+
+.flex-section {
+    margin-top: 40px;
+}
+
+.flex-container {
+    display: flex; /* 자식 요소들을 가로로 나란히 배치합니다 */
+    /* flex-direction: column; 이거 하면 세로로 배치합니당  */
+    border: 2px solid #333;
+    padding: 10px;
+    height: 100px;
+    justify-content: space-between; 
+}
+
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+}
