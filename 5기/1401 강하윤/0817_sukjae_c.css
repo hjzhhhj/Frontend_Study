@@ -1,0 +1,27 @@
+body{
+    background-color:black;
+    text-align: center;
+    padding:200px;
+    color:white;
+}
+
+#main-title{
+    color:white;
+    font-family:"pretendard";
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align:center;
+}
+.join button{
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border:1px solid white;
+    font-family:"pretendard";
+    border-radius: 250px;
+    background: liner-gradient(180deg, #E2E2E2 0%, #7C7C7C 100%);
+    background-blend-mode: overlay; 
+    padding: 20px 50px 20px 50px;
+}
