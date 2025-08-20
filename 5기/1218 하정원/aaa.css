@@ -1,0 +1,26 @@
+body {
+    background-color: gray;
+    margin-left: 20px;
+    
+}
+.pp h2 {
+    color: green;
+    text-align: center;
+}
+.pp {
+    width: 1000px;
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+.dd {
+    background-color: white;
+    width: 1000px;
+    height: 250px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.dd h1 {
+    text-align: center;
+}
