@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    text-align: center;
+    font-family: Pretendard;
+    color: white;
+    padding: 200px;
+}
+
+.introduce p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.introduce h1{
+    font-size: 108px;
+    font-weight: 800;
+}
+
+.introduce button{ 
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px  50px 16px 50px;
+
+    border-radius: 250px;
+    border: 1px solid #ffffff;
+    background-color: rgba(240, 248, 255, 0);
+}

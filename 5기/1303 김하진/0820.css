@@ -1,0 +1,30 @@
+body{
+    background-color: gray;
+    padding: 20px;
+}
+.introduce{
+    background-color: white;
+    padding: 50px;
+    width: 1000px;
+    margin: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+.introduce h1{
+    color: green;
+}
+
+.todo h1{
+    text-align: center;
+}
+.todo{
+    background-color: white;
+    padding: 50px;
+    width: 1000px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.introduce img{
+    width: 150px;
+}
