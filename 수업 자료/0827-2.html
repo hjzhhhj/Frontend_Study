@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>DOM 연습</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+
+        .big {
+            font-size: 28px;
+        }
+
+        .blue {
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">안녕하세요!</h1>
+
+    <button id="btn">눌러보세요</button>
+    <p id="msg">아직 아무 일도…</p>
+
+    <input id="name" placeholder="이름을 입력하세요" />
+    <p id="preview">미리보기: </p>
+
+    <ul id="list"></ul>
+    <button id="add">아이템 추가</button>
+    <script>
+        // 여기다가 단계별 코드를 붙여 넣어요.
+        const btn = document.getElementById('btn');
+        const msg = document.getElementById('msg');
+
+        btn.addEventListener('click', () => {
+            msg.textContent = '버튼이 눌렸습니다!';
+        });
+
+        const title = document.getElementById('title');
+
+        btn.addEventListener('click', () => {
+            title.classList.toggle('big');   // 크기 키우기/되돌리기
+            title.classList.toggle('blue');  // 색 파란색/되돌리기
+        });
+
+        const nameInput = document.getElementById('name');
+        const preview = document.getElementById('preview');
+
+        nameInput.addEventListener('input', () => {
+            preview.textContent = '미리보기: ' + nameInput.value;
+        });
+
+        const list = document.getElementById('list');
+        const addBtn = document.getElementById('add');
+        let n = 1;
+
+        addBtn.addEventListener('click', () => {
+            const li = document.createElement('li'); // <li> 만들기
+            li.textContent = `아이템 ${n++}`;        // 글자 넣기
+            list.append(li);                          // 화면에 붙이기
+        });
+
+    </script>
+</body>
+
+</html>
