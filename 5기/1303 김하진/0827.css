@@ -1,0 +1,69 @@
+body{
+    background-color: gray;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.title{
+    background-color: orange;
+    padding: 15px;
+    color: white;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#highlight{
+    color: orange;
+    border-radius: 15px;
+}
+.introduce{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.introduce img{
+    border-radius: 15px;
+}
+
+.introduce button{
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.introduce a{
+    color: orange;
+}
+.apply{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.apply button{
+    background-color: white;
+    border-radius: 3px;
+}
+
+.a{
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+#link a {
+    text-decoration: none;
+    color: black;
+}
+
+#link:hover {
+    background-color: aqua;
+}
