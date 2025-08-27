@@ -1,0 +1,71 @@
+body{
+    background-color:gray;
+    justify-content: center;
+    align-items: center;
+
+}
+.all{
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+.mas{
+    background-color:orange;
+    text-align:center;
+    padding:15px;
+    width: 1000px;
+    border-radius:20px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.link {
+    text-align: center;
+    background-color:white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 1000px;
+    margin: 20px;
+}
+.link > p > strong{
+    color: orange;
+}
+.link > button {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 130px;
+    cursor: pointer;
+    background-color: white;
+}
+.join {
+    background-color: white;
+    padding: 15px;
+    width: 1000px;
+    border-radius: 20px;
+    text-align:left;
+    margin: 20px;
+}
+.join > button{
+    cursor: pointer;
+}
+#img{
+    width:300px;
+    height: 200px;
+    border-radius: 20px;
+}
+.join > input{
+    margin: 8px;
+}
+
+#linkh a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#linkh:hover{
+    background-color: aqua;
+}
