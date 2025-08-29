@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MASTHON 해커톤 신청</title>
+    <style>
+      body {
+        background-color: #f1f1f1;
+        font-family: "Pretendard";
+        margin: 0;
+      }
+
+      .header {
+        background-color: #ff7700;
+        color: #fff;
+        text-align: center;
+        padding: 28px;
+      }
+
+      .header h1 {
+        font-weight: 900;
+      }
+
+      .header p {
+        font-weight: 300;
+      }
+
+      .section {
+        background-color: #fff;
+        max-width: 1000px;
+        margin: 18px auto;
+        padding: 22px;
+        border-radius: 12px;
+      }
+
+      h1,
+      h2 {
+        margin: 8px 0 12px 0;
+      }
+
+      .subtitle {
+        background-color: #fff1e6;
+        color: #ff7700;
+        border-radius: 8px;
+        padding: 6px 10px;
+        width: 59px;
+        font-weight: bold;
+      }
+
+      .label {
+        background-color: #f2f2f2;
+        border-radius: 6px;
+        padding: 4px 8px;
+        font-weight: bold;
+        color: #666;
+      }
+
+      .field {
+        background-color: #fafafa;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      input {
+        width: auto;
+        padding: 10px;
+        margin: 12px 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      .submit-btn {
+        background-color: #ff7700;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .links {
+        text-align: center;
+        margin: 16px 0 4px 0;
+      }
+      .links a {
+        color: #ff7700;
+        font-weight: bold;
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>MASTHON 25</h1>
+      <p>2025년 여름, 당신의 아이디어를 보여주세요!</p>
+    </div>
+
+    <div class="section">
+      <p class="subtitle">행사 안내</p>
+      <img
+        src="/수업 자료/img/hackthon.png"
+        style="width: 100%; border-radius: 12px"
+      />
+      <p><span class="label">일시</span> 2025년 7월 20일</p>
+      <p><span class="label">장소</span> 미림마이스터고 강당</p>
+      <p><span class="label">대상</span> 고등학생 누구나</p>
+      <p><span class="label">팀 구성</span> 최대 4인</p>
+      <div class="links">
+        <a href="https://www.naver.com/">공지 보기</a>
+        <a href="https://www.google.com/">문의하기</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="subtitle">신청하기</div>
+
+      <div class="field">
+        <p><span class="label">이름</span></p>
+        <input type="text" placeholder="이름" />
+      </div>
+
+      <div class="field">
+        <p><span class="label">학교 / 학번</span></p>
+        <input type="text" placeholder="학교 / 학번" />
+      </div>
+
+      <div class="field">
+        <p><span class="label">팀 이름</span></p>
+        <input type="text" placeholder="팀 이름 (없으면 개인참가)" />
+      </div>
+
+      <div class="field">
+        <input type="checkbox" /> 대회 규칙에 동의합니다<br />
+        <input type="radio" /> 개인 참가 <br />
+        <input type="radio" /> 팀 참가 (2~4인) <br />
+      </div>
+
+      <p><input type="submit" value="신청하기" class="submit-btn" /></p>
+    </div>
+  </body>
+</html>

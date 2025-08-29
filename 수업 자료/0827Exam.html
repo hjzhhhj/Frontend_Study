@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAS 동아리 홈페이지</title>
+  <style>
+    body {
+      background-color: #747474;
+      font-family: "Pretendard";
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: #ffb350;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+
+    h1, h2 {
+      margin: 10px 0;
+    }
+
+    #intro img {
+      width: 160px;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 12px auto;
+    }
+    #intro p {
+      text-align: center;
+      margin: 6px 0;
+    }
+    .highlight {
+      color: #ff9100;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid #222;
+      border-radius: 999px;
+      background-color: #ffffff;
+      color: #222;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    
+    .btn-center {
+      text-align: center;
+    }
+    
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .social-links a {
+      margin: 0 10px;
+      color: #ff9100;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>MAS</h1>
+      <p>미림마이스터고 전공동아리</p>
+    </header>
+
+    <div id="intro" class="section">
+      <img src="img/MAS.png" alt="MAS 단체 사진">
+      <p>안녕하세요! 저희는 <span class="highlight">MAS</span>입니다.</p>
+      <p>웹 개발을 함께 공부하고 프로젝트를 만드는 동아리예요.</p>
+      <div class="btn-center">
+        <a class="btn" href="#apply">지원하러 가기</a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/">📷 Instagram</a>
+        <a href="https://github.com/">💻 GitHub</a>
+      </div>
+    </div>
+
+    <div id="apply" class="section">
+    <h2>지원하기</h2>
+    <p><input type="text" placeholder="이름"></p>
+    <p><input type="text" placeholder="학번"></p>
+    <p><input type="checkbox" required> 개인정보 이용에 동의합니다</p>
+    <p>
+      <input type="radio" name="grade" value="1학년"> 1학년
+      <input type="radio" name="grade" value="2학년"> 2학년
+      <input type="radio" name="grade" value="3학년"> 3학년
+    </p>
+    <p><input type="submit" value="제출하기"></p>
+  </div>
+</body>
+</html>
