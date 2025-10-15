@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard";
+  background: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  max-width: 800px;
+  width: 100%;
+  padding: 48px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+h1 {
+  color: #1f2937;
+  font-size: 2.25em;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.progress-info {
+  font-size: 1em;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.question-card {
+  margin-bottom: 32px;
+}
+
+h2 {
+  color: #111827;
+  font-size: 1.25em;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-weight: 600;
+}
+
+#options-container {
+  margin-bottom: 24px;
+}
+
+.option {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 500;
+  color: #374151;
+}
+
+.option:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+}
+
+.option.selected {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.option.correct {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+}
+
+.option.incorrect {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+.option.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.input-answer {
+  width: 100%;
+  padding: 16px;
+  font-size: 1em;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.input-answer:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.checkbox-option:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+}
+
+.checkbox-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+  accent-color: #3b82f6;
+}
+
+.checkbox-option.selected {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  background: #6b7280;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #4b5563;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.feedback {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feedback.correct {
+  background: #d1fae5;
+  color: #065f46;
+  border: 2px solid #10b981;
+}
+
+.feedback.incorrect {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 2px solid #ef4444;
+}
+
+.hidden {
+  display: none;
+}
+
+#result-container {
+  text-align: center;
+  padding: 0;
+}
+
+#result-container h2 {
+  color: #111827;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.score {
+  font-size: 1.875em;
+  color: #374151;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+#final-score {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+#result-details {
+  text-align: left;
+  margin: 32px 0;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.result-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border: 2px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.result-item.correct {
+  border-color: #10b981;
+  background: #f0fdf4;
+}
+
+.result-item.incorrect {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+.result-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.result-item-number {
+  font-weight: 600;
+  font-size: 1.125em;
+  color: #111827;
+}
+
+.result-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875em;
+  letter-spacing: 0.025em;
+}
+
+.result-badge.correct {
+  background: #10b981;
+  color: white;
+}
+
+.result-badge.incorrect {
+  background: #ef4444;
+  color: white;
+}
+
+.result-question {
+  font-size: 1em;
+  color: #374151;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.result-answer {
+  margin: 12px 0;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.result-answer-label {
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 4px;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.result-your-answer {
+  color: #ef4444;
+}
+
+.result-correct-answer {
+  color: #10b981;
+}
+
+.result-explanation {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  font-size: 0.9375em;
+  color: #4b5563;
+  border-left: 3px solid #3b82f6;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.875em;
+  }
+
+  h2 {
+    font-size: 1.125em;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9375em;
+  }
+}
