@@ -76,7 +76,7 @@ const questions = [
     explanation: "parseInt('15') + 5 = 15 + 5 = 20이 됩니다.",
   },
   {
-    question: `10. 다음 코드의 출력 결과를 적으세요.
+    question: `10. 다음 코드의 출력 결과를 적으세요. (필요 시 공백으로 구분)
 
 let value = "1";
 
@@ -96,7 +96,7 @@ switch (value) {
       "switch문은 엄격한 비교(===)를 사용하므로 문자열 '1'과 매칭됩니다.",
   },
   {
-    question: `11. 다음 코드의 출력 결과를 적으세요.
+    question: `11. 다음 코드의 출력 결과를 적으세요. (필요 시 공백으로 구분)
 
 let num = 2;
 
@@ -116,7 +116,7 @@ switch (num) {
     explanation: "case 2에 break가 없어서 case 3까지 실행됩니다(fall-through).",
   },
   {
-    question: `12. 다음 코드의 출력 결과를 적으세요.
+    question: `12. 다음 코드의 출력 결과를 적으세요. (필요 시 공백으로 구분)
 
 let num = "5";
 
@@ -142,7 +142,7 @@ else console.log("C");`,
       "올바른 함수 선언 방식은 function 키워드 다음에 함수명을 쓰는 것입니다.",
   },
   {
-    question: `14. 다음 코드의 출력 결과를 적으세요.
+    question: `14. 다음 코드의 출력 결과를 적으세요. (필요 시 공백으로 구분)
 
 function add(num1, num2) {
   console.log(num1 + num2);
@@ -154,7 +154,7 @@ add(7, 3);`,
     explanation: "7 + 3 = 10이 출력됩니다.",
   },
   {
-    question: `15. 다음 코드의 출력 결과를 적으세요.
+    question: `15. 다음 코드의 출력 결과를 적으세요. (필요 시 공백으로 구분)
 
 function check(num) {
   if (num < 0) return "음수입니다.";
